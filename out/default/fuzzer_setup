@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=./png_read_harness
+AFL_CUSTOM_INFO_PROGRAM_ARGV=@@
+AFL_CUSTOM_INFO_OUT=out/default
+# command line:
+'afl-fuzz' '-V' '3600' '-i' 'corpus' '-o' 'out' '--' './png_read_harness' '@@'
